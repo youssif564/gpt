@@ -856,7 +856,7 @@ html[dir="ltr"] #paymentMethod {
 }
 
 
-/* ===== Header image logo - larger mobile size + moved more to the right ===== */
+/* ===== Header image logo - balanced right position ===== */
 .brand-logo {
   display: inline-flex;
   align-items: center;
@@ -874,8 +874,6 @@ html[dir="ltr"] #paymentMethod {
   object-fit: contain;
   object-position: right center;
   border-radius: 0;
-  transform: scale(1.06);
-  transform-origin: right center;
 }
 
 .brand-logo .brand-mark {
@@ -883,47 +881,25 @@ html[dir="ltr"] #paymentMethod {
 }
 
 @media (max-width: 700px) {
-  .nav {
-    gap: 10px;
+  .brand-logo {
+    margin-right: -8px !important;
+    transform: translateX(12px) !important;
   }
 
   .brand-logo img {
-    width: 160px;
+    width: 158px;
     height: 62px;
-    transform: scale(1.1);
   }
 }
 
 @media (max-width: 420px) {
+  .brand-logo {
+    margin-right: -10px !important;
+    transform: translateX(16px) !important;
+  }
+
   .brand-logo img {
-    width: 148px;
+    width: 145px;
     height: 58px;
-    transform: scale(1.12);
-  }
-}
-
-
-/* ===== Move header logo much further right ===== */
-.brand-logo {
-  margin-left: auto !important;
-  margin-right: -18px !important;
-  transform: translateX(32px) !important;
-}
-
-.brand-logo img {
-  object-position: right center !important;
-}
-
-@media (max-width: 700px) {
-  .brand-logo {
-    margin-right: -28px !important;
-    transform: translateX(42px) !important;
-  }
-}
-
-@media (max-width: 420px) {
-  .brand-logo {
-    margin-right: -34px !important;
-    transform: translateX(52px) !important;
   }
 }
