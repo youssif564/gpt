@@ -856,14 +856,15 @@ html[dir="ltr"] #paymentMethod {
 }
 
 
-/* ===== Header image logo - larger mobile size ===== */
+/* ===== Header image logo - larger mobile size + moved more to the right ===== */
 .brand-logo {
   display: inline-flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
   min-width: auto;
   text-decoration: none;
   line-height: 0;
+  margin-left: auto;
 }
 
 .brand-logo img {
@@ -871,8 +872,10 @@ html[dir="ltr"] #paymentMethod {
   width: 180px;
   height: 70px;
   object-fit: contain;
-  object-position: center;
+  object-position: right center;
   border-radius: 0;
+  transform: scale(1.06);
+  transform-origin: right center;
 }
 
 .brand-logo .brand-mark {
@@ -880,15 +883,21 @@ html[dir="ltr"] #paymentMethod {
 }
 
 @media (max-width: 700px) {
+  .nav {
+    gap: 10px;
+  }
+
   .brand-logo img {
-    width: 158px;
+    width: 160px;
     height: 62px;
+    transform: scale(1.1);
   }
 }
 
 @media (max-width: 420px) {
   .brand-logo img {
-    width: 145px;
+    width: 148px;
     height: 58px;
+    transform: scale(1.12);
   }
 }
