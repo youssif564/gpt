@@ -903,3 +903,19 @@ html[dir="ltr"] #paymentMethod {
     height: 58px;
   }
 }
+
+
+/* ===== Tiny logo correction: keep it right but fully visible ===== */
+@media (max-width: 700px) {
+  .brand-logo {
+    margin-right: -4px !important;
+    transform: translateX(6px) !important;
+  }
+}
+
+@media (max-width: 420px) {
+  .brand-logo {
+    margin-right: -5px !important;
+    transform: translateX(8px) !important;
+  }
+}
