@@ -901,3 +901,29 @@ html[dir="ltr"] #paymentMethod {
     transform: scale(1.12);
   }
 }
+
+
+/* ===== Move header logo much further right ===== */
+.brand-logo {
+  margin-left: auto !important;
+  margin-right: -18px !important;
+  transform: translateX(32px) !important;
+}
+
+.brand-logo img {
+  object-position: right center !important;
+}
+
+@media (max-width: 700px) {
+  .brand-logo {
+    margin-right: -28px !important;
+    transform: translateX(42px) !important;
+  }
+}
+
+@media (max-width: 420px) {
+  .brand-logo {
+    margin-right: -34px !important;
+    transform: translateX(52px) !important;
+  }
+}
